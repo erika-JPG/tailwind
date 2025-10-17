@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
 
     <title>Hello Tailwind</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello World! From Tailwind
-    </h1>
+  <div class="@container">
+
+    <div class="flex flex-col @md:flex-row">
+      <h1 class="text-3xl font-bold underline">
+          Hello World! From Tailwind
+      </h1>
+    </div>
+    
+    <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+      <img class="size-12 shrink-0" src="/img/logo.svg" alt="ChitChat Logo" />
+      <div>
+        <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
+        <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
